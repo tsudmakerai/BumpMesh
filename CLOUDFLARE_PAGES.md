@@ -8,8 +8,8 @@
 - Production branch: `cloudflare-pages`
 - Framework preset: `None`
 - Build command: оставить пустым
-- Build output directory: `/`
-- Root directory: `/`
+- Build output directory: `.`
+- Root directory: оставить пустым
 
 ## Подключение
 
