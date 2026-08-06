@@ -1,21 +1,15 @@
 # Cloudflare Pages
 
-Репозиторий уже подготовлен для публикации через GitHub.
-
 ## Настройки проекта
 
 - Repository: `tsudmakerai/BumpMesh`
 - Production branch: `cloudflare-pages`
 - Framework preset: `None`
-- Build command: оставить пустым
-- Build output directory: `.`
+- Build command: `node build.js`
+- Build output directory: `dist`
 - Root directory: оставить пустым
+- Node.js: 20 или новее
 
-## Подключение
+Cloudflare собирает обычный `dist/index.html`. Браузеру больше не нужны `DecompressionStream`, загрузка частей или распаковка приложения — это повышает совместимость с Android-планшетами и встроенным браузером Notion.
 
-1. Cloudflare Dashboard → Workers & Pages → Create application → Pages → Connect to Git.
-2. Выбрать `tsudmakerai/BumpMesh`.
-3. Указать настройки выше.
-4. Нажать Save and Deploy.
-
-После первого деплоя Cloudflare выдаст адрес вида `https://bumpmesh.pages.dev`. Все последующие коммиты в ветку `cloudflare-pages` будут публиковаться автоматически.
+После изменения настроек запустите Retry deployment или Create deployment.
